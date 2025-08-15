@@ -1,0 +1,70 @@
+@RELATION threat_detection
+
+@ATTRIBUTE request_length NUMERIC
+@ATTRIBUTE sql_injection {yes,no}
+@ATTRIBUTE xss_attack {yes,no}
+@ATTRIBUTE ddos {yes,no}
+@ATTRIBUTE phishing {yes,no}
+@ATTRIBUTE mitm {yes,no}
+@ATTRIBUTE zero_day {yes,no}
+@ATTRIBUTE threat_level {high,medium,low}
+
+@DATA
+100,no,no,no,no,no,no,low
+120,no,no,no,no,no,no,low
+150,no,no,no,no,no,no,low
+180,no,no,no,no,no,no,low
+200,no,yes,no,no,no,no,medium
+250,no,no,no,no,yes,no,medium
+260,no,no,no,yes,no,no,medium
+280,no,no,yes,no,no,no,medium
+300,no,no,yes,no,no,no,medium
+320,yes,no,no,no,no,no,medium
+340,no,yes,no,no,no,no,medium
+360,no,no,no,no,no,yes,high
+380,yes,no,no,yes,no,no,high
+400,no,no,no,no,no,yes,high
+420,yes,yes,no,no,no,no,high
+440,yes,no,yes,no,no,no,high
+460,no,no,yes,no,yes,no,high
+480,no,no,no,yes,yes,no,high
+500,yes,yes,no,no,no,no,high
+520,yes,yes,yes,no,no,no,high
+540,no,no,yes,yes,no,no,high
+560,yes,no,no,no,yes,no,high
+580,yes,no,no,no,no,yes,high
+600,yes,yes,yes,no,no,no,high
+620,yes,yes,no,yes,no,no,high
+640,yes,no,no,yes,no,no,high
+660,no,yes,yes,no,no,no,medium
+680,no,yes,no,no,yes,no,medium
+700,no,yes,no,yes,no,no,high
+720,yes,no,yes,no,no,no,high
+740,no,no,yes,no,yes,no,high
+760,no,no,yes,no,no,yes,high
+780,no,no,yes,yes,no,no,high
+800,yes,yes,yes,yes,no,no,high
+820,yes,no,no,yes,no,yes,high
+840,no,yes,yes,no,yes,no,high
+860,no,no,yes,no,yes,yes,high
+880,yes,no,yes,no,no,yes,high
+900,yes,yes,yes,yes,yes,no,high
+920,yes,yes,yes,yes,no,yes,high
+940,yes,yes,yes,no,yes,yes,high
+960,yes,yes,yes,yes,yes,yes,high
+980,no,no,no,no,no,no,low
+1000,yes,yes,no,no,no,no,high
+1020,no,no,yes,yes,yes,no,high
+1040,yes,no,no,no,no,no,medium
+1060,no,yes,no,no,no,no,medium
+1080,no,no,no,yes,no,no,medium
+1100,no,no,no,no,yes,no,medium
+1120,no,no,no,no,no,yes,high
+1140,no,no,yes,yes,no,no,high
+1160,yes,yes,yes,no,no,no,high
+1180,yes,no,no,no,no,yes,high
+1200,yes,no,no,no,no,no,medium
+1220,no,no,yes,no,no,no,medium
+1240,no,yes,no,no,no,no,medium
+1260,yes,yes,no,no,no,no,high
+1280,yes,yes,yes,yes,yes,yes,high

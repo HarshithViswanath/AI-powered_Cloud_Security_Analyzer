@@ -1,0 +1,40 @@
+@RELATION threat_detection
+
+@ATTRIBUTE log_start_time STRING
+@ATTRIBUTE duration_seconds NUMERIC
+@ATTRIBUTE request_length NUMERIC
+@ATTRIBUTE sql_injection {yes,no}
+@ATTRIBUTE xss_attack {yes,no}
+@ATTRIBUTE ddos {yes,no}
+@ATTRIBUTE phishing {yes,no}
+@ATTRIBUTE mitm {yes,no}
+@ATTRIBUTE zero_day {yes,no}
+@ATTRIBUTE threat_level {high,medium,low}
+
+@DATA
+'2025-05-05T10:00:01',5,100,no,no,no,no,no,no,low
+'2025-05-05T10:01:15',45,500,yes,no,no,no,no,no,medium
+'2025-05-05T10:03:20',65,1000,yes,yes,no,no,no,no,high
+'2025-05-05T10:04:50',30,200,no,yes,no,no,no,no,medium
+'2025-05-05T10:06:10',90,300,no,no,yes,no,no,no,medium
+'2025-05-05T10:08:00',20,150,no,no,no,yes,no,no,medium
+'2025-05-05T10:08:45',40,250,no,no,no,no,yes,no,medium
+'2025-05-05T10:09:50',100,400,no,no,no,no,no,yes,high
+'2025-05-05T10:12:00',180,600,yes,yes,yes,no,no,no,high
+'2025-05-05T10:15:30',120,450,no,no,no,yes,yes,no,high
+'2025-05-05T10:17:45',240,1200,yes,yes,yes,yes,no,no,high
+'2025-05-05T10:21:10',10,100,no,no,no,no,no,no,low
+'2025-05-05T10:22:00',15,220,no,no,no,no,no,no,low
+'2025-05-05T10:22:45',60,330,no,yes,no,no,no,no,medium
+'2025-05-05T10:25:00',300,1100,yes,yes,yes,yes,yes,yes,high
+'2025-05-05T10:30:10',180,770,yes,no,no,yes,no,no,high
+'2025-05-05T10:35:15',95,610,no,no,yes,no,yes,no,high
+'2025-05-05T10:37:20',5,190,no,no,no,no,no,no,low
+'2025-05-05T10:37:30',20,420,no,no,no,yes,no,no,medium
+'2025-05-05T10:38:15',75,360,no,yes,yes,no,no,no,medium
+'2025-05-05T10:40:45',150,580,yes,no,no,no,no,yes,high
+'2025-05-05T10:43:30',210,1020,yes,yes,no,no,yes,no,high
+'2025-05-05T10:47:15',170,1350,yes,no,yes,yes,no,no,high
+'2025-05-05T10:50:45',190,720,no,yes,yes,no,no,yes,high
+'2025-05-05T10:55:10',360,1230,yes,yes,yes,yes,yes,no,high
+
