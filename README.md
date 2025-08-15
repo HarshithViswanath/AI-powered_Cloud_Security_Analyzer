@@ -1,0 +1,1 @@
+AI-Powered Cloud Security Analyzer is a Java-based offline tool that uses Weka ML models and rule-based logic to detect threats from local logs. Built with Spring Boot, SQLite, and a web UI, it analyzes .arff threat data and displays results through a clean HTML interface.
